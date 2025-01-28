@@ -25,4 +25,4 @@ jobs:
           default-config-file-path: ".snowflake/config.toml"
 
       - name: Deploy scripts to preprod environment
-        run: snow git execute gh-action-demo/branches/main/demo_table.sql
+        run: snow git execute "@gh-action-demo/branches/main/demo_table.sql"
