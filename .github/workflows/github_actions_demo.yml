@@ -25,7 +25,7 @@ jobs:
           default-config-file-path: ".snowflake/config.toml"
 
       - name: Fetch repository changes
-        run: snow git fetch $GITHUB_WORKSPACE
+        run: snow git fetch gh-action-demo
 
       - name: Deploy scripts to preprod environment
-        run: snow git execute $GITHUB_WORKSPACE/branches/main/demo_table.sql
+        run: snow git execute gh-action-demo/branches/main/demo_table.sql
