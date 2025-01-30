@@ -1,5 +1,4 @@
-default_connection_name = "workflow"
+default_connection_name = "myconnection"
 
-[connections]
-[connections.workflow]
-authenticator="SNOWFLAKE_JWT"
+[connections.myconnection]
+account = ${{ secrets.SNOWFLAKE_CONNECTIONS_DEFAULT_ACCOUNT }}
