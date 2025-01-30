@@ -30,4 +30,4 @@ jobs:
 
       
       - name: Deploy scripts to preprod environment
-        run: echo $repo_name 
+        run: echo $repo_name
