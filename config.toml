@@ -2,5 +2,5 @@ default_connection_name = "myconnection"
 
 [connections.myconnection]
 account = "mi03451.us-east-2.aws"
-user = "demo_user"
-password = "abc123"
+user = "PARUL"
+password = "SilentPatient@2311"
