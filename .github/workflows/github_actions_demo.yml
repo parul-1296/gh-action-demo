@@ -29,4 +29,4 @@ jobs:
 
       
       - name: Deploy scripts to preprod environment
-        run: snow connection test
+        run: snow git execute '@gh-action-demo/branches/main/demo_table.sql'
