@@ -2,3 +2,4 @@ default_connection_name = "myconnection"
 
 [connections.myconnection]
 account = "AY55141"
+user = "demo_user"
