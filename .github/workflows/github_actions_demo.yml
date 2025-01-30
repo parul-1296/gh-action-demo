@@ -22,8 +22,8 @@ jobs:
         uses: Snowflake-Labs/snowflake-cli-action@v1.5
         with:
           cli-version: "latest"
-          default-config-file-path: "@gh-action-demo/branches/main/config.toml"
+          default-config-file-path: ".snowflake/config.toml"
 
       
       - name: Deploy scripts to preprod environment
-        run: snow git execute @gh-action-demo/branches/main/
+        run: snow git execute @gh-action-demo/branches/main/demo_table.sql
