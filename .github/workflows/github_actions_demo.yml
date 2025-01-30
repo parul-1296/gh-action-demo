@@ -29,4 +29,4 @@ jobs:
 
       
       - name: Deploy scripts to preprod environment
-        run: snow --version
+        run: snow connection test
