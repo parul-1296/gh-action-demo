@@ -16,6 +16,7 @@ jobs:
       SNOWFLAKE_CONNECTIONS_DEFAULT_PASSWORD: ${{ secrets.SNOWFLAKE_CONNECTIONS_DEFAULT_PASSWORD }}
       SNOWFLAKE_CONNECTIONS_DEFAULT_DB: ${{ secrets.SF_DATABASE }}
       SNOWFLAKE_CONNECTIONS_DEFAULT_WH: ${{ secrets.SF_WH }}
+      REPO_NAME: ${GITHUB_REPOSITORY
 
     steps:
       - name: Checkout repository
@@ -29,4 +30,4 @@ jobs:
 
       
       - name: Deploy scripts to preprod environment
-        run: snow git execute "gh-action-demo/gh-action-demo/demo_table.sql" 
+        run: echo $repo_name 
